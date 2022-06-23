@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/coutomerInformationFragment">
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.tomorrow.ui.home.HomeFragment"
+        android:label="Home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/productProgressFragment"
+        android:name="com.example.tomorrow.ui.product_progress.ProductProgressFragment"
+        android:label="Product Progress"
+        tools:layout="@layout/fragment_product_progress" />
+
+    <fragment
+        android:id="@+id/productCheckFragment"
+        android:name="com.example.tomorrow.ui.product_check.ProductCheckFragment"
+        android:label="Product Check"
+        tools:layout="@layout/fragment_product_check" />
+
+    <fragment
+        android:id="@+id/chatFragment"
+        android:name="com.example.tomorrow.ui.chat.chatFragment"
+        android:label="Chat with us..."
+        tools:layout="@layout/fragment_chat" />
+    <fragment
+        android:id="@+id/coutomerInformationFragment"
+        android:name="com.example.tomorrow.ui.customerinfo.CustomerInfomationFragment"
+        android:label="Customer"
+        tools:layout="@layout/fragment_customer_information" />
+    <fragment
+        android:id="@+id/contectFragment"
+        android:name="com.example.tomorrow.ui.contect.contectFragment"
+        android:label="Contect with us..."
+        tools:layout="@layout/fragment_contect" />
+
+
+</navigation>

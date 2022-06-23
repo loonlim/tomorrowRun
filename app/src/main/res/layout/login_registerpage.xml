@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".login_register.LoginRegisterpage">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Register"
+        android:textSize="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.51"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/fullname"
+        android:layout_width="214dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="7dp"
+        android:background="@drawable/buttonstyle"
+        android:ems="10"
+        android:hint="Name"
+        android:inputType="textPersonName"
+        android:shape="@drawable/buttonstyle"
+        android:text=""
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/username"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="214dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/buttonstyle"
+        android:ems="10"
+        android:hint="ID Name"
+        android:inputType="textPersonName"
+        android:shape="@drawable/buttonstyle"
+        android:text=""
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/password"
+        app:layout_constraintStart_toStartOf="@+id/fullname"
+        app:layout_constraintTop_toBottomOf="@+id/fullname" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="214dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/buttonstyle"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:shape="@drawable/buttonstyle"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/repassword"
+        app:layout_constraintStart_toStartOf="@+id/username"
+        app:layout_constraintTop_toBottomOf="@+id/username" />
+
+    <EditText
+        android:id="@+id/repassword"
+        android:layout_width="214dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="13dp"
+        android:background="@drawable/buttonstyle"
+        android:ems="10"
+        android:hint="Repeat Password"
+        android:inputType="textPassword"
+        android:shape="@drawable/buttonstyle"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/email"
+        app:layout_constraintStart_toStartOf="@+id/password"
+        app:layout_constraintTop_toBottomOf="@+id/password" />
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="214dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/buttonstyle"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:shape="@drawable/buttonstyle"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/phonenum"
+        app:layout_constraintStart_toStartOf="@+id/repassword"
+        app:layout_constraintTop_toBottomOf="@+id/repassword" />
+
+    <EditText
+        android:id="@+id/phonenum"
+        android:layout_width="211dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/buttonstyle"
+        android:ems="10"
+        android:hint="Phone Numeber"
+        android:inputType="phone"
+        android:shape="@drawable/buttonstyle"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="@+id/email"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/email"
+        app:layout_constraintTop_toBottomOf="@+id/email" />
+
+    <EditText
+        android:id="@+id/address"
+        android:layout_width="215dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="13dp"
+        android:background="@drawable/buttonstyle"
+        android:ems="10"
+        android:hint="No. address"
+        android:inputType="textEmailAddress"
+        android:shape="@drawable/buttonstyle"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="@+id/phonenum"
+        app:layout_constraintStart_toStartOf="@+id/phonenum"
+        app:layout_constraintTop_toBottomOf="@+id/phonenum" />
+
+
+    <RadioGroup
+        android:id="@+id/radioGender"
+        android:layout_width="215dp"
+        android:layout_height="33dp"
+        android:layout_marginTop="17dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="@+id/address"
+        app:layout_constraintStart_toStartOf="@+id/address"
+        app:layout_constraintTop_toBottomOf="@+id/address">
+
+
+        <RadioButton
+            android:id="@+id/radioButtonMale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:shadowColor="@color/fullblack"
+            android:textColor="@color/fullblack"
+            android:text="Male" />
+
+        <RadioButton
+            android:id="@+id/radioButtonFemale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:shadowColor="@color/fullblack"
+            android:textColor="@color/fullblack"
+            android:checked="false"
+            android:text="Female" />
+
+    </RadioGroup>
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/password"
+        app:layout_constraintEnd_toEndOf="@+id/imageView3"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/imageView3"
+        app:layout_constraintTop_toTopOf="@+id/password"
+        app:srcCompat="@drawable/ic_baseline_password_24" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/phonenum"
+        app:layout_constraintEnd_toEndOf="@+id/imageView6"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/imageView6"
+        app:layout_constraintTop_toTopOf="@+id/phonenum"
+        app:srcCompat="@drawable/ic_baseline_phone_24" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/username"
+        app:layout_constraintEnd_toEndOf="@+id/imageView2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/imageView2"
+        app:layout_constraintTop_toTopOf="@+id/username"
+        app:srcCompat="@drawable/ic_baseline_perm_identity_24" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/address"
+        app:layout_constraintEnd_toEndOf="@+id/imageView8"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/imageView8"
+        app:layout_constraintTop_toTopOf="@+id/address"
+        app:srcCompat="@drawable/ic_baseline_home_work_24" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/email"
+        app:layout_constraintEnd_toEndOf="@+id/imageView4"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/imageView4"
+        app:layout_constraintTop_toTopOf="@+id/email"
+        app:srcCompat="@drawable/ic_baseline_email_24" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toStartOf="@+id/fullname"
+        app:layout_constraintTop_toTopOf="@+id/fullname"
+        app:srcCompat="@drawable/ic_baseline_account_circle_24" />
+
+    <ProgressBar
+        android:id="@id/loading"
+        android:layout_width="235dp"
+        android:layout_height="61dp"
+        android:layout_marginBottom="16dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/btnRegister"
+        app:layout_constraintEnd_toEndOf="@+id/btnRegister"
+        app:layout_constraintHorizontal_bias="0.466"
+        app:layout_constraintStart_toStartOf="@+id/btnRegister" />
+
+    <Button
+        android:id="@+id/btnRegister"
+        android:layout_width="145dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="68dp"
+        android:background="@drawable/buttonstyle"
+        android:shape="@drawable/buttonstyle"
+        android:text="Submit Register"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGender" />
+
+    <TextView
+        android:id="@+id/RetrunLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:background="@color/transparent"
+        android:text="Retrun Login"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnRegister" />
+
+    <TextView
+        android:id="@+id/loading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="47dp"
+        android:layout_marginBottom="4dp"
+        android:text=""
+        app:layout_constraintBottom_toTopOf="@+id/btnRegister"
+        app:layout_constraintEnd_toEndOf="@+id/btnRegister"
+        app:layout_constraintHorizontal_bias="0.551"
+        app:layout_constraintStart_toStartOf="@+id/btnRegister"
+        app:layout_constraintTop_toBottomOf="@+id/radioGender" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

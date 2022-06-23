@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="300dp"
+    android:layout_height="150dp">
+
+    <TextView
+        android:id="@+id/CustomerNameShow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:textColor="@color/fullblack"
+        app:layout_constraintStart_toEndOf="@+id/google_customer_face"
+        app:layout_constraintTop_toBottomOf="@+id/CustomergoogleNameShow" />
+
+    <TextView
+        android:id="@+id/CustomerIdView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="7dp"
+        android:layout_marginBottom="1dp"
+        android:textColor="@color/fullblack"
+
+        app:layout_constraintBottom_toTopOf="@+id/Customerbuttonsingout"
+        app:layout_constraintStart_toEndOf="@+id/textView8" />
+
+    <TextView
+        android:id="@+id/CustomergoogleNameShow"
+        android:layout_width="0dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="10dp"
+        android:textColor="@color/fullblack"
+        app:layout_constraintStart_toEndOf="@+id/google_customer_face"
+        app:layout_constraintTop_toTopOf="@+id/google_customer_face" />
+
+    <TextView
+        android:id="@+id/CustomerEmailShow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/fullblack"
+        app:layout_constraintBottom_toTopOf="@+id/textView8"
+        app:layout_constraintStart_toStartOf="@+id/textView8"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/google_customer_face"
+        android:layout_width="82dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="4dp"
+
+        android:background="@mipmap/ic_google_login_icon_foreground"
+        android:contentDescription="@string/nav_header_desc"
+        android:paddingTop="@dimen/nav_header_vertical_spacing"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/id"
+        android:textColor="@color/fullblack"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/Customerbuttonsingout"
+        app:layout_constraintStart_toStartOf="@+id/Customerbuttonsingout" />
+
+    <Button
+        android:id="@+id/Customerbuttonsingout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/colorstyletoolsbar"
+        android:text="@string/sing_out"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

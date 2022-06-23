@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+
+        <item
+
+            android:id="@+id/homeFragment"
+            android:icon="@drawable/ic_baseline_home_work_24"
+
+            android:title="Our design" />
+        <item
+            android:id="@+id/productProgressFragment"
+            android:icon="@drawable/ic_baseline_art_track_24"
+            android:title="Product Progress" />
+        <item
+            android:id="@+id/productCheckFragment"
+            android:icon="@drawable/ic_baseline_search_24"
+            android:title="Product Check" />
+        <item
+            android:id="@+id/chatFragment"
+            android:icon="@drawable/ic_baseline_chat_bubble_24"
+            android:title="Chat" />
+        <item
+            android:id="@+id/coutomerInformationFragment"
+            android:icon="@drawable/ic_baseline_account_circle_24"
+            android:title="User" />
+        <item
+            android:id="@+id/contectFragment"
+            android:icon="@drawable/ic_baseline_phone_24"
+            android:title="Contact" />
+
+    </group>
+</menu>

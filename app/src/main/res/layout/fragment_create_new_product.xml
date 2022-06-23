@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.createnewproduct.CreateNewProductFragment">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="694dp">
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="412dp"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints">
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Creat New Prodect"
+                android:textAlignment="center"
+                android:textSize="35dp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="19dp"
+            android:text="Product Type"
+            app:layout_constraintStart_toStartOf="@+id/textView13"
+            app:layout_constraintTop_toBottomOf="@+id/textView13" />
+
+        <TextView
+            android:id="@+id/textView17"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Email"
+            app:layout_constraintStart_toStartOf="@+id/textView16"
+            app:layout_constraintTop_toBottomOf="@+id/textView16" />
+
+        <EditText
+            android:id="@+id/editTextTextPersonName4"
+            android:layout_width="wrap_content"
+            android:layout_height="28dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/buttonstyle"
+            android:ems="10"
+            android:hint="invite staff"
+            android:inputType="textPersonName"
+            android:shape="@drawable/button_new_productstyle"
+            android:text=""
+            android:textAlignment="center"
+            app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName3"
+            app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName3" />
+
+        <TextView
+            android:id="@+id/textView23"
+            android:layout_width="33dp"
+            android:layout_height="32dp"
+            android:layout_marginTop="9dp"
+            android:text="W"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="@+id/textView22"
+            app:layout_constraintTop_toBottomOf="@+id/textView22" />
+
+        <TextView
+            android:id="@+id/textView18"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="19dp"
+            android:text="Phone number"
+            app:layout_constraintBottom_toBottomOf="@+id/editTextTextPersonName10"
+            app:layout_constraintStart_toStartOf="@+id/textView17"
+            app:layout_constraintTop_toBottomOf="@+id/textView17" />
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="19dp"
+            android:text="Product Name"
+            app:layout_constraintStart_toStartOf="@+id/textView12"
+            app:layout_constraintTop_toBottomOf="@+id/textView12" />
+
+        <TextView
+            android:id="@+id/textView22"
+            android:layout_width="33dp"
+            android:layout_height="32dp"
+            android:layout_marginTop="8dp"
+            android:text="L"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="@+id/textView24"
+            app:layout_constraintTop_toBottomOf="@+id/textView24" />
+
+        <EditText
+            android:id="@+id/editTextTextPersonName9"
+            android:layout_width="43dp"
+            android:layout_height="28dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/buttonstyle"
+            android:ems="10"
+            android:hint="+65"
+            android:inputType="textPersonName"
+            android:shape="@drawable/button_new_productstyle"
+            android:text=""
+
+            android:textAlignment="center"
+            app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName8"
+            app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName8" />
+
+        <EditText
+            android:id="@+id/editTextTextPersonName7"
+            android:layout_width="wrap_content"
+            android:layout_height="28dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/buttonstyle"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:shape="@drawable/button_new_productstyle"
+            android:text=""
+            app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName6"
+            app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName6" />
+
+        <EditText
+            android:id="@+id/editTextTextPersonName14"
+            android:layout_width="52dp"
+            android:layout_height="31dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/buttonstyle"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:shape="@drawable/button_new_productstyle"
+            android:text=""
+            app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName9"
+            app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName9" />
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="36dp"
+            android:layout_marginTop="12dp"
+            android:text="Product ID"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Submmit"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView9" />
+
+        <TextView
+            android:id="@+id/textView25"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Product size"
+            app:layout_constraintStart_toStartOf="@+id/textView18"
+            app:layout_constraintTop_toBottomOf="@+id/textView18" />
+
+        <EditText
+            android:id="@+id/editTextTextPersonName12"
+            android:layout_width="52dp"
+            android:layout_height="31dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/buttonstyle"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:shape="@drawable/button_new_productstyle"
+            android:text=""
+            app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName14"
+            app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName14" />
+
+        <EditText
+            android:id="@+id/editTextTextPersonName3"
+            android:layout_width="wrap_content"
+            android:layout_height="28dp"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="40dp"
+            android:background="@drawable/buttonstyle"
+            android:ems="10"
+            android:hint="ID"
+            android:inputType="textPersonName"
+            android:shape="@drawable/button_new_productstyle"
+            android:text=""
+            android:textAlignment="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/textView12"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+        <EditText
+            android:id="@+id/editTextTextPersonName10"
+            android:layout_width="166dp"
+            android:layout_height="28dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/buttonstyle"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:shape="@drawable/button_new_productstyle"
+            android:text=""
+            app:layout_constraintEnd_toEndOf="@+id/editTextTextPersonName8"
+            app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName8" />
+
+        <TextView
+            android:id="@+id/textView19"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Manuscript upload"
+            app:layout_constraintStart_toStartOf="@+id/textView25"
+            app:layout_constraintTop_toBottomOf="@+id/textView23" />
+
+        <TextView
+            android:id="@+id/textView24"
+            android:layout_width="33dp"
+            android:layout_height="32dp"
+            android:layout_marginStart="12dp"
+            android:text="H"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@+id/textView25"
+            app:layout_constraintStart_toEndOf="@+id/textView25"
+            app:layout_constraintTop_toTopOf="@+id/textView25" />
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Date Create"
+            app:layout_constraintStart_toStartOf="@+id/textView14"
+            app:layout_constraintTop_toBottomOf="@+id/textView14" />
+
+        <ImageView
+            android:id="@+id/imageView9"
+            android:layout_width="200dp"
+            android:layout_height="171dp"
+            android:layout_marginTop="16dp"
+            android:src="@android:drawable/ic_input_add"
+            app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName15"
+            app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName15" />
+
+        <EditText
+            android:id="@+id/editTextTextPersonName6"
+            android:layout_width="wrap_content"
+            android:layout_height="28dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/buttonstyle"
+            android:ems="10"
+            android:inputType="date"
+            android:shape="@drawable/button_new_productstyle"
+            android:text=""
+            app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName5"
+            app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName5" />
+
+        <EditText
+            android:id="@+id/editTextTextPersonName5"
+            android:layout_width="wrap_content"
+            android:layout_height="28dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/buttonstyle"
+            android:ems="10"
+            android:hint="banner"
+            android:inputType="textPersonName"
+            android:shape="@drawable/button_new_productstyle"
+            android:text=""
+            android:textAlignment="center"
+
+            app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName4"
+            app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName4" />
+
+        <EditText
+            android:id="@+id/editTextTextPersonName15"
+            android:layout_width="52dp"
+            android:layout_height="31dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/buttonstyle"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:shape="@drawable/button_new_productstyle"
+            android:text=""
+            app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName12"
+            app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName12" />
+
+        <EditText
+            android:id="@+id/editTextTextPersonName8"
+            android:layout_width="wrap_content"
+            android:layout_height="28dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/buttonstyle"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:shape="@drawable/button_new_productstyle"
+            android:text=""
+            app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName7"
+            app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName7" />
+
+        <TextView
+            android:id="@+id/textView16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="19dp"
+            android:text="Estimate Date"
+            app:layout_constraintStart_toStartOf="@+id/textView15"
+            app:layout_constraintTop_toBottomOf="@+id/textView15" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>
