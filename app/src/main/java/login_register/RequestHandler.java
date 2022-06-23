@@ -1,4 +1,4 @@
-package com.example.tomorrowrun.tomorrow.login_register;
+package login_register;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;

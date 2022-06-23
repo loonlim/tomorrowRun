@@ -1,21 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    package="com.example.tomorrowrun">
+    package="com.example.tomorrow" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
     <application
+        android:name="androidx.multidex.MultiDexApplication"
         android:allowBackup="true"
-        android:dataExtractionRules="@xml/data_extraction_rules"
-        android:fullBackupContent="@xml/backup_rules"
-        android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.TomorrowRun"
-        tools:targetApi="31">
+        android:theme="@style/Theme.Tomorrow" >
         <activity
-            android:name=".MainActivity"
-            android:exported="true">
+            android:name=".MainActivity2"
+            android:exported="false"
+            android:label="@string/title_activity_main2"
+            android:theme="@style/Theme.Tomorrow.NoActionBar" />
+        <activity
+            android:name=".customer.CustomerInterface"
+            android:exported="true" />
+        <activity
+            android:name=".login_register.LoginRegisterpage"
+            android:exported="false" />
+        <activity
+            android:name=".login_register.LoginFirstPage"
+            android:exported="false" />
+        <activity
+            android:name=".login_register.HandArtPage"
+            android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

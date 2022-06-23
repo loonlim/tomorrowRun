@@ -1,4 +1,4 @@
-package com.example.tomorrowrun.tomorrow.login_register;
+package login_register;
 
 import android.content.Intent;
 import android.os.AsyncTask;

@@ -1,4 +1,4 @@
-package com.example.tomorrowrun.tomorrow.customer;
+package customer;
 
 import android.content.Intent;
 import android.os.Build;
